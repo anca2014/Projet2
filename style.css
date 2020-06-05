@@ -38,8 +38,6 @@ h3
 }
 .identite
 {
-	width: 40%;
-	
 	background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -161,6 +159,10 @@ header
 	flex-direction: row;
 	justify-content: flex-start;
 }
+.centre
+{
+	width: 40%;
+}
 .coeur
 {
 	display: flex;
@@ -198,24 +200,27 @@ header
 	display:flex;
 	flex-direction: column;
 }
+.centre
+{
+	width: 100%;
+}
 .centre1
 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	justify-content: flex-start;
-	
 }
 .body
 {
 display: flex;
 flex-direction: column;
-justify-content: center;
 }
 .identite
 {
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 #photo
 {
@@ -224,5 +229,23 @@ justify-content: center;
 .coeur
 {
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.pro1
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.pro3
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.professionelle2
+{
+	display: flex;
+	flex-wrap: wrap;
 }
 }
