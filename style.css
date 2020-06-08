@@ -195,6 +195,13 @@ header
 }
 @media all and (max-width: 1096px)
 {
+	.header
+	{
+		height: 400px;
+		margin-left: 100px;
+		flex-wrap: wrap;
+		width: min-content;
+	}
 	.block1
 {
 	display:flex;
@@ -218,13 +225,15 @@ flex-direction: column;
 }
 .identite
 {
-	width: 100%;
+	width: 140%;
 	display: flex;
 	justify-content: center;
 }
 #photo
 {
-	width: 100%;
+	width: 140%;
+	display: flex;
+	justify-content: center;
 }
 .coeur
 {
@@ -247,5 +256,11 @@ flex-direction: column;
 {
 	display: flex;
 	flex-wrap: wrap;
+}
+.maxime
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 }
