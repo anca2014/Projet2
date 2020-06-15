@@ -21,20 +21,17 @@ clear: both;
 h1
 {
 	font-size: 60px;
+	margin-left: 50px;
 }
 .web
 {
 	font-size: 45px;
 	text-align: left;
+	margin-left: 50px;
 }
 h2
 {
 	font-size: 35px; 
-}
-h3
-{
-	text-align: center;
-	margin-top: 0px;
 }
 .identite
 {
@@ -42,11 +39,13 @@ h3
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 1200px;
+    width: 40%;
+    max-width: 500px;
 }
 #photo
 {
-	width: 500px;
+	width: 40%;
+	max-width: 500px;
 	height: 400px;
 	background-color: aqua; 
 	display:flex;
@@ -76,25 +75,25 @@ h3
 }
 header
 {
-    height: 400px;
-	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
-.formation2
+.formation
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 10px;
 	margin-left:50px;	
 }
-.professionelle2
+.professionelle
 {
 	display: flex;
 	margin-top:10px;
 	flex-direction:column; 
 	margin-left: 50px;
 }
-#recommandation
+.recommandation
 {
 	display: flex;
 	margin-top: 10px;
@@ -116,15 +115,15 @@ header
   margin-left: 50px;
   margin-right: 50px;
 }
-.block1
+.block
 {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 .maxime
 {
 	display: flex;
-	justify-content: center;
 }
 .maxime2
 {
@@ -149,29 +148,24 @@ header
 	display: flex;
 	justify-content: space-around;
 }
-.loisirs
-{
-	margin-top:300px;
-}
-.centre1
+.centre
 {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
 	justify-content: flex-start;
 }
-.centre
-{
-	max-width: 500px;
-}
 .coeur
 {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
-	height: 1400px;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+}
+.moi
+{
+	flex-grow: 1;
 }
 .pro1
 {
@@ -198,21 +192,18 @@ header
 {
 	header
 	{
-		height: 400px;
-		flex-wrap: wrap;
-		width: min-content;
+		width: 100%;
 		margin-left: 0px;
+		display:flex;
+		flex-direction: column;
+		align-content: center;
 	}
-	.block1
+	.block
     {
 	    display:flex;
 	    flex-direction: column;
     }
     .centre
-    {
-	    max-width: 100%;
-    }
-    .centre1
     {
 	    display: flex;
 	    flex-direction: column;
@@ -229,18 +220,20 @@ header
 	   width: 100%;
 	   display: flex;
 	   justify-content: center;
+	   max-width: fit-content;
     }
     #photo
     {
 	   width: 100%;
 	   display: flex;
 	   justify-content: center;
+	   max-width: 1096px;
     }
     .coeur
     {
 	   width: 100%;
 	   display: flex;
-	   flex-direction: row;
+	   flex-direction: column;
 	   flex-wrap: wrap;
     }
     .pro1
@@ -252,11 +245,7 @@ header
     {
 	   display: flex;
 	   flex-wrap: wrap;
-    }
-    .professionelle2
-    {
-	   display: flex;
-	   flex-wrap: wrap;
+	   width: 100%;
     }
     .maxime
     {
@@ -286,6 +275,22 @@ header
     	height: 15px;
     }
     .maxime2
+    {
+    	margin-left: 0px;
+    }
+    h1
+    {
+    	font-size: 40px;
+    }
+    h2
+    {
+    	font-size:20px; 
+    }
+    .formation
+    {
+      margin-left: 0px;
+    }
+    .professionelle
     {
     	margin-left: 0px;
     }
