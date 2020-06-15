@@ -1,7 +1,3 @@
-@media all and (max-devise-width:480px)
-{
-handheld:;
-}
 	.AURELIE
 	{
 color: blue;
@@ -19,48 +15,45 @@ height:320px;
 border-radius: 50%;
 overflow:hidden;
 margin-top: 50px;
-margin-left: 75px;
+margin-left: 90px;
 clear: both;
 }
 h1
 {
 	font-size: 60px;
+	margin-left: 50px;
 }
 .web
 {
 	font-size: 45px;
 	text-align: left;
+	margin-left: 50px;
 }
 h2
 {
 	font-size: 35px; 
 }
-h3
-{
-	text-align: center;
-	margin-top: 0px;
-}
 .identite
 {
-	width: 400px;
-	height: 1400px;
 	background-color: aqua;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    max-width: 500px;
 }
 #photo
 {
-	width: 400px;
+	width: 40%;
+	max-width: 500px;
 	height: 400px;
 	background-color: aqua; 
 	display:flex;
-
 }
 .trait
 {
 	border-bottom: 3px aqua solid;
 }
-
 .icone-crayon
 {
 	font-size: 30px;
@@ -72,8 +65,7 @@ h3
 	width: 50px;
 	height: 50px;
 	color:aqua;
-	margin-right: 30px;
-	
+	margin-right: 30px;	
 }
 .icone-professionelle
 {
@@ -83,24 +75,25 @@ h3
 }
 header
 {
-    height: 400px;
-	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
-.formation2
+.formation
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 10px;
 	margin-left:50px;	
 }
-.professionelle2
+.professionelle
 {
 	display: flex;
 	margin-top:10px;
 	flex-direction:column; 
 	margin-left: 50px;
 }
-#recommandation
+.recommandation
 {
 	display: flex;
 	margin-top: 10px;
@@ -122,14 +115,15 @@ header
   margin-left: 50px;
   margin-right: 50px;
 }
-.block1
+.block
 {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .maxime
 {
 	display: flex;
-	justify-content: center;
 }
 .maxime2
 {
@@ -152,33 +146,31 @@ header
 .icone
 {
 	display: flex;
-	justify-content: space-between;
-}
-.loisirs
-{
-	margin-top:300px;
-}
-.centre1
-{
-	display: flex;
+	justify-content: space-around;
 }
 .centre
 {
 	display: flex;
-	width: 400px;
-	flex-direction: column;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 .coeur
 {
 	display: flex;
 	flex-direction: column;
-	width: 800px;
+	width: 60%;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.moi
+{
+	flex-grow: 1;
 }
 .pro1
 {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;	
 	justify-content: flex-start;
 	align-items: baseline;
 }
@@ -187,7 +179,7 @@ header
 	display: flex;
 	width: 200px;
 	flex-direction: column;
-	justify-content: :flex-start; 
+	justify-content :flex-start; 
 }
 .pro3
 {
@@ -195,4 +187,111 @@ header
 	width: 350px;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+@media all and (max-width: 1096px)
+{
+	header
+	{
+		width: 100%;
+		margin-left: 0px;
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.block
+    {
+	    display:flex;
+	    flex-direction: column;
+    }
+    .centre
+    {
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    width: 100%;
+    }
+    .body
+    {
+       display: flex;
+       flex-direction: column;
+    }
+    .identite
+    {
+	   width: 100%;
+	   display: flex;
+	   justify-content: center;
+	   max-width: fit-content;
+    }
+    #photo
+    {
+	   width: 100%;
+	   display: flex;
+	   justify-content: center;
+	   max-width: 1096px;
+    }
+    .coeur
+    {
+	   width: 100%;
+	   display: flex;
+	   flex-direction: column;
+	   flex-wrap: wrap;
+    }
+    .pro1
+    {
+	   display: flex;
+	   flex-wrap: wrap;
+    }
+    .pro3
+    {
+	   display: flex;
+	   flex-wrap: wrap;
+	   width: 100%;
+    }
+    .maxime
+    {
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: center;
+    }
+    .imageflotante
+    {
+       float: left;
+       width:250px;
+       height:320px;
+       border-radius: 50%;
+       overflow:hidden;
+       display: flex;
+       justify-content: center;
+       margin-top: 50px;
+       margin-left: 0px;
+       clear: both;
+    }
+    .loisirs
+    {
+	   margin-top: 0px;
+    }
+    .icone-puce
+    {
+    	height: 15px;
+    }
+    .maxime2
+    {
+    	margin-left: 0px;
+    }
+    h1
+    {
+    	font-size: 40px;
+    }
+    h2
+    {
+    	font-size:20px; 
+    }
+    .formation
+    {
+      margin-left: 0px;
+    }
+    .professionelle
+    {
+    	margin-left: 0px;
+    }
 }
